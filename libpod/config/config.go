@@ -40,7 +40,9 @@ const (
 	// _conmonVersionFormatErr is used when the expected versio-format of conmon
 	// has changed.
 	_conmonVersionFormatErr = "conmon version changed format"
+)
 
+var (
 	// InstallPrefix is the prefix where podman will be installed.
 	// It can be overridden at build time.
 	_installPrefix = "/usr"
@@ -68,6 +70,7 @@ const (
 	// place of the configuration file pointed to by ConfigPath.
 	_rootOverrideConfigPath = _etcDir + "/containers/libpod.conf"
 )
+
 
 // SetOptions contains a subset of options in a Config. It's used to indicate if
 // a given option has either been set by the user or by a parsed libpod
